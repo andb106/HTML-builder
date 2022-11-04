@@ -19,7 +19,7 @@ async function bundleCss (pathToSomeFolder, pathToOutput) {
         const rs = fs.createReadStream(pathToFile, 'utf-8');
         rs.on('data', (data) => ws.write(data));
       }
-    };
+    }
   } catch (err) {
     console.error(err);
   }
